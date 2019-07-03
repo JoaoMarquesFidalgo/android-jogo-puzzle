@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/corners"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:id="@+id/RRocupar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/RL_back"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/ocuparb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:padding="5dp"
+            android:text="@string/ocupar"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/titulo_enciclopedia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/enciclopedia"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/RL_back"
+        android:layout_width="667dp"
+        android:layout_height="219dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true">
+
+        <Button
+            android:id="@+id/pt_enc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/corners_caixas_laranja"
+            android:text="@string/voltar" />
+
+        <TextView
+            android:id="@+id/nome_planeta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/next"
+            android:text="@string/ocupar"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+
+        <Button
+            android:id="@+id/next2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/nome_planeta"
+            android:layout_marginEnd="109dp"
+            android:background="@drawable/ic_next" />
+
+        <TextView
+            android:id="@+id/materia1"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/nome_planeta"
+            android:clickable="true"
+            android:ellipsize="end"
+            android:text="@string/oxigenio"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/materia2"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:ellipsize="end"
+            android:text="@string/potassio"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/materia3"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="71dp"
+            android:clickable="true"
+            android:ellipsize="end"
+            android:text="@string/carbono"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_above="@+id/imagem_rodar"
+            android:layout_alignEnd="@+id/imagem_rodar"
+            android:background="@drawable/ic_next" />
+
+        <pl.droidsonroids.gif.GifTextView
+            android:id="@+id/imagem_rodar"
+            android:layout_width="150dp"
+            android:layout_height="140dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/earth_spinning" />
+
+
+        <FrameLayout
+            android:id="@+id/FF_enciclopedia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/book_"
+                android:layout_width="350dp"
+                android:layout_height="170dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="92dp"
+                android:src="@drawable/book_300_210" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="170dp">
+
+                <TableLayout
+                    android:id="@+id/encher"
+                    android:layout_width="220dp"
+                    android:layout_height="200dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="64dp">
+
+                    <TextView
+                        android:id="@+id/ocupar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:padding="5dp"
+                        android:text="@string/ocupar"
+                        android:textSize="14dp" />
+                </TableLayout>
+            </RelativeLayout>
+        </FrameLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

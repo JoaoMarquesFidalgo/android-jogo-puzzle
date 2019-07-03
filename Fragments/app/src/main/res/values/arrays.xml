@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/tools">
+    <array name="resicon">
+        <item android:id="@+id/field1">@raw/k_0</item>
+        <item android:id="@+id/field2">@raw/k_1</item>
+        <item android:id="@+id/field3">@raw/k_2</item>
+        <item android:id="@+id/field4">@raw/k_3</item>
+        <item android:id="@+id/field5">@raw/k_</item>
+    </array>
+
+    <array name="resicon_c">
+        <item android:id="@+id/field1">@raw/c_0</item>
+        <item android:id="@+id/field2">@raw/c_1</item>
+        <item android:id="@+id/field3">@raw/c_2</item>
+        <item android:id="@+id/field4">@raw/c_3</item>
+        <item android:id="@+id/field5">@raw/c_</item>
+    </array>
+
+    <array name="resicon_o">
+        <item android:id="@+id/field1">@raw/o_0</item>
+        <item android:id="@+id/field2">@raw/o_1</item>
+        <item android:id="@+id/field3">@raw/o_2</item>
+        <item android:id="@+id/field4">@raw/o_3</item>
+        <item android:id="@+id/field5">@raw/o_</item>
+    </array>
+    <array name="resicon_tds">
+        <item android:id="@+id/field1">@raw/c_</item>
+        <item android:id="@+id/field2">@raw/k_</item>
+        <item android:id="@+id/field3">@raw/o_</item>
+    </array>
+
+
+    <item name="field1" type="id">1</item>
+    <item name="field2" type="id">2</item>
+    <item name="field3" type="id">3</item>
+    <item name="field4" type="id">4</item>
+    <item name="field5" type="id">5</item>
+</resources>

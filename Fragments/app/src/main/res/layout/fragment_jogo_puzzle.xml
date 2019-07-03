@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:background="@drawable/corners" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/titulo_jogo_puzzle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:text="@string/fragment_jogo_puzzle"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout_back_4"
+        android:visibility="gone">
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp">
+        <TextView
+            android:id="@+id/tempo_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tempo"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/pontuacao_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="46dp"
+            android:text="@string/pontuacao"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:visibility="visible"
+            android:id="@+id/quizz1"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true">
+            <TextView
+                android:id="@+id/ocupar_4"
+                android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ocupar"/>
+
+            <LinearLayout
+                android:background="@color/black"
+                android:id="@+id/imagem_centro_4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/quizz2"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true">
+            <TextView
+                android:id="@+id/ocupar_5"
+                android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ocupar"/>
+
+            <LinearLayout
+                android:background="@color/black"
+                android:id="@+id/imagem_centro_5"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/quizz3"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true">
+            <TextView
+                android:id="@+id/ocupar_6"
+                android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ocupar"/>
+
+            <LinearLayout
+                android:background="@color/black"
+                android:id="@+id/imagem_centro_6"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/palavra1_4"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="2dp"
+                android:background="@color/black"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:id="@+id/palavra2_4"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="2dp"
+                android:background="@color/black"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:id="@+id/palavra3_4"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="2dp"
+                android:background="@color/black"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/front"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:id="@+id/tempo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tempo"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/pontuacao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="46dp"
+                android:text="@string/pontuacao"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="Ajuda"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/icone"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_help" />
+
+            <ImageView
+                android:background="@color/black"
+                android:id="@+id/ajuda_img"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_centerInParent="true">
+
+            <LinearLayout
+                android:id="@+id/palavracerta"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/topo_esq"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="left"
+                android:background="@color/black"
+                android:orientation="horizontal"></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/topo_dir"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="right"
+                android:background="@color/black"
+                android:orientation="horizontal"></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/baixo_esq"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="left|bottom"
+                android:background="@color/black"
+                android:orientation="horizontal"></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/baixo_dir"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="right|bottom"
+                android:background="@color/black"
+                android:orientation="horizontal"></LinearLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/palavra1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="2dp"
+                android:background="@color/black"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:id="@+id/palavra2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="2dp"
+                android:background="@color/black"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:id="@+id/palavra3"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="2dp"
+                android:background="@color/black"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:id="@+id/palavra4"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@color/black"
+                android:orientation="horizontal" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:clickable="false"
+        android:id="@+id/avancar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="206dp"
+        android:background="@drawable/corners_caixas_verde"
+        android:text="@string/avancar" />
+
+    <Button
+        android:id="@+id/voltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="202dp"
+        android:background="@drawable/corners_caixas_laranja"
+        android:text="@string/voltar" />
+    <ProgressBar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:id="@+id/progress_bar"
+        android:indeterminate="true"/>
+</RelativeLayout>

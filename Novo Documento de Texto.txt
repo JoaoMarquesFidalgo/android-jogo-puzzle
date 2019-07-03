@@ -1,0 +1,7 @@
+
+http://estga-prog.ua.pt/dadm/json/exemploDADM.json
+
+colocar a informacao do json numa lista (preferencia recyclerview
+fazer cache do json, se acedido a menos de 24h entao ler cache
+
+room base de dados

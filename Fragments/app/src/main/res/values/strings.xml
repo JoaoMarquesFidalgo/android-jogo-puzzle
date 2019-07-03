@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Fragments</string>
+    <string name="facebook_app_id">602703343461679</string>
+    <string name="fb_login_protocol_scheme">fb602703343461679</string>
+    <string name="login_text">Nome</string>
+    <string name="jogo">Jogo</string>
+    <string name="ranking">Ranking</string>
+    <string name="enciclopedia">Enciclopédia</string>
+    <string name="opcoes">Opções</string>
+    <string name="login">Login</string>
+    <string name="entrar_por_nome">Entrar por Nome</string>
+    <string name="voltar">Voltar</string>
+    <string name="btn_jogar">Jogar</string>
+    <string name="mudar_nome">Mudar Nome</string>
+    <string name="mudar_imagem">Mudar Imagem</string>
+    <string name="som">Som</string>
+    <string name="mudar_opcoes">Mudar Nome e Imagem</string>
+    <string name="mudar_nome_imagem">Mudar Nome e Imagem</string>
+    <string name="ocupar">Ocupar</string>
+    <string name="proxima_pagina">Próxima Página</string>
+    <string name="oxigenio">Oxigénio</string>
+    <string name="potassio">Potássio</string>
+    <string name="carbono">Carbono</string>
+    <string name="fragment_jogo_puzzle">fragment_jogo_puzzle</string>
+    <string name="tempo">Tempo</string>
+    <string name="pontua_o">Pontuação</string>
+    <string name="pontuacao">Pontuação</string>
+    <string name="ajuda">Ajuda</string>
+    <string name="avancar">Avançar</string>
+</resources>

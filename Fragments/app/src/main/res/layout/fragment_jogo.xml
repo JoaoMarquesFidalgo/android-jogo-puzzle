@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/corners"
+    android:padding="16dp"
+    tools:layout_editor_absoluteY="73dp">
+
+    <RelativeLayout
+        android:id="@+id/layout_planeta"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/titulo_jogo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ocupar"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="23dp">
+
+            <TableLayout
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="10dp">
+
+                <TableRow
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp">
+
+                    <ImageView
+                        android:id="@+id/green"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/green" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Completo com 5 valores"
+                        android:textColor="#ffffff" />
+                </TableRow>
+
+                <TableRow android:layout_marginBottom="10dp">
+
+                    <ImageView
+                        android:id="@+id/white"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/white" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pontuação entre 1 e 4 valores"
+                        android:textColor="#ffffff" />
+
+                </TableRow>
+
+                <TableRow android:layout_marginBottom="10dp">
+
+                    <ImageView
+                        android:id="@+id/orange"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/orange" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ainda não passou o desafio"
+                        android:textColor="#ffffff" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <ImageView
+                        android:id="@+id/red"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/red" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ainda não desbloqueou o desafio"
+                        android:textColor="#ffffff" />
+
+
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/imagem_planeta_grande"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="43dp"
+            android:src="@drawable/terra" />
+
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="17dp">
+
+            <ImageView
+                android:id="@+id/nivel4"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="28dp"
+                android:src="@drawable/red" />
+
+            <ImageView
+                android:id="@+id/nivel2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_above="@+id/nivel1"
+                android:layout_toEndOf="@+id/nivel4"
+                android:src="@drawable/red" />
+
+            <ImageView
+                android:id="@+id/nivel1"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/nivel3"
+                android:layout_marginBottom="49dp"
+                android:src="@drawable/red" />
+
+            <ImageView
+                android:id="@+id/nivel3"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="51dp"
+                android:layout_marginTop="70dp"
+                android:src="@drawable/red" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/CL_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/layout_planeta"
+        app:layout_constraintEnd_toStartOf="@+id/layout_planeta"
+        app:layout_constraintStart_toStartOf="@+id/layout_planeta"
+        app:layout_constraintTop_toTopOf="@+id/layout_planeta">
+
+        <TextView
+            android:id="@+id/titulo_jogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/jogo"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/jupiter"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/jupiter"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="114dp"
+            android:src="@drawable/lock" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/textView2"
+            android:layout_marginStart="100dp"
+            android:text="Planeta Terra"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/textView2"
+            app:layout_constraintEnd_toEndOf="@+id/terra"
+            app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+
+        <ImageView
+            android:id="@+id/terra"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="67dp"
+            android:src="@drawable/terra"
+            app:layout_constraintBottom_toTopOf="@+id/textView"
+            app:layout_constraintEnd_toStartOf="@+id/titulo_jogo"
+            app:layout_constraintTop_toTopOf="@+id/jupiter" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/pt_jogo"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="145dp"
+            android:text="Planeta Jupiter"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/jupiter"
+            app:layout_constraintTop_toBottomOf="@+id/jupiter" />
+
+
+        <Button
+            android:id="@+id/pt_jogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="12dp"
+            android:layout_marginEnd="11dp"
+            android:background="@android:color/holo_orange_light"
+            android:text="@string/voltar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </RelativeLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>
